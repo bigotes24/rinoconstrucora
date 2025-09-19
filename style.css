@@ -1,0 +1,69 @@
+/* --- CSS: Estilos de la página --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.servicios, .portafolio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0055aa;
+}
