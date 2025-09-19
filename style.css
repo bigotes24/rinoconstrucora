@@ -1,20 +1,21 @@
-/* --- Estilos globales --- */
+/* --- Estilos generales --- */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background-color: #f8f9fa;
+  background-color: #f8f6f3;
   color: #333;
 }
 
-/* --- Encabezado --- */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* --- HEADER --- */
 header {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("https://images.unsplash.com/photo-1590490359683-2b1f1d9b5b6d?auto=format&fit=crop&w=1500&q=80");
-  background-size: cover;
-  background-position: center;
+  background: #6f1d1b; /* Rojo vino */
   color: white;
-  padding: 50px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -22,6 +23,10 @@ header h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
@@ -33,24 +38,22 @@ nav a {
 }
 
 nav a:hover {
-  color: #FFD700; /* Dorado */
+  color: #d4a373; /* Café claro */
 }
 
-/* --- Secciones --- */
+/* --- SECCIONES --- */
 section {
   padding: 60px 20px;
-  text-align: center;
 }
 
 section h2 {
   font-size: 2rem;
-  margin-bottom: 30px;
-  color: #003366;
+  color: #6f1d1b;
   font-weight: 700;
 }
 
-/* --- Tarjetas --- */
-.servicios, .portafolio {
+/* --- CARDS --- */
+.contenedor {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -60,28 +63,32 @@ section h2 {
   background: white;
   padding: 20px;
   margin: 15px;
-  border-radius: 12px;
+  border-radius: 10px;
   width: 280px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
 
 .card h3 {
-  color: #003366;
-  margin-bottom: 10px;
+  color: #b23a48;
 }
 
-.card p {
-  color: #555;
-  font-size: 0.95rem;
+/* --- FORMULARIO --- */
+form {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* --- Formulario --- */
 input, textarea, button {
   width: 100%;
   padding: 12px;
@@ -89,23 +96,25 @@ input, textarea, button {
   border: 1px solid #ccc;
   border-radius: 6px;
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }
 
 button {
-  background: #003366;
+  background: #6f1d1b;
   color: white;
   font-weight: 600;
   cursor: pointer;
+  border: none;
   transition: background 0.3s;
 }
 
 button:hover {
-  background: #0055aa;
+  background: #b23a48; /* Rojo más claro */
 }
 
-/* --- Pie de página --- */
+/* --- FOOTER --- */
 footer {
-  background: #222;
+  background: #432818; /* Café oscuro */
   color: white;
   text-align: center;
   padding: 20px;
